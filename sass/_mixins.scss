@@ -1,0 +1,45 @@
+
+@mixin background ($url) {
+    background-image: $url;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin time {
+    @include flex(start, center);
+
+    &__dias,
+    &__horas,
+    &__minutos,
+    &__segundos{
+        @include flex(center,center);
+        flex-direction: column;
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+
+    &__dias p,
+    &__horas p,
+    &__minutos p,
+    &__segundos p{
+        font-size: 3em;
+        color: white;
+        font-weight: 300;
+    }
+
+    &__dias span,
+    &__horas span,
+    &__minutos span,
+    &__segundos span{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
