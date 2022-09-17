@@ -5,7 +5,7 @@ minutos = document.getElementById('minutos')
 segundos = document.getElementById('segundos')
 
 
-const newYear = '19 Sep 2022';
+const newYear = '21 Sep 2022 21:53:00';
 
 
 let countTimer =()=>{

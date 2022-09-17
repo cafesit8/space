@@ -7,12 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="scripts/time.js" defer></script>
+    <script src="scripts/button.js" defer></script>
 </head>
 <body>
     <section class="section">
         <article class="section__article">
-            <h6>Más cerca de lo que crees</h6>
-            <h1>We're <span>Launching</span> Soon</h1>
+            <h6>Soyuz 2.1a | Soyuz MS-22</h6>
+            <h1>A la<span> Luna</span> de regreso</h1>
             <div class="section__time">
                 <div class="section__time__dias">
                     <p id="dias">00</p><span>Días</span>
@@ -27,12 +28,25 @@
                     <p id="segundos">00</p><span>Segundos</span>
                 </div>
             </div>
-            <button class="section__btn">
-                Learn More <ion-icon name="caret-forward-outline"></ion-icon>
+            <button class="section__btn" id="btn">
+                Vamos <ion-icon name="caret-forward-outline"></ion-icon>
             </button>
         </article>
         <img class="section__rocket" src="images/rocket.png">
         <img class="section__planets" src="images/planets.png">
+    </section>
+    <section class="section2" id="section2">
+        <div class="section2__content">
+            <article class="section2__article">
+                <h1>Soyuz 2.1a <span>|</span> Soyuz MS-22</h1>
+                <p>Un cohete Soyuz 2.1a de Roscosmos aguarda, para realizar la misión tripulada con la cápsula Soyuz MS-22. Su lanzamiento está programado desde el Cosmódromo de Baikonur, sitio 31/6, en Kazajistán, partiendo el 21 de septiembre a las 13:54 UTC.</p>
+                <button class="section__btn" id="btn2">
+                    <ion-icon name="caret-back-outline"></ion-icon> Volvamos
+                </button>
+            </article>
+            <img class="section2__astro1" src="images/astronauta.png" alt="">
+            <img class="section2__astro2" src="images/astronauta2.png" alt="">
+        </div>
     </section>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
