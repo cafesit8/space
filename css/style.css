@@ -40,7 +40,7 @@
   font-weight: 500;
 }
 .section__article h1 span {
-  color: rgb(255, 80, 80);
+  color: #ff5050;
 }
 .section__time {
   display: flex;
@@ -126,6 +126,65 @@
   }
   100% {
     right: 25%;
+  }
+}
+@media (max-width: 860px) {
+  .section__article {
+    padding: 0 15px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section__article h6 {
+    font-size: 16px;
+  }
+  .section__article h1 {
+    font-size: 22px;
+  }
+  .section__time {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section__time__dias, .section__time__horas, .section__time__minutos, .section__time__segundos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section__time__dias:not(:last-child), .section__time__horas:not(:last-child), .section__time__minutos:not(:last-child), .section__time__segundos:not(:last-child) {
+    margin-right: 0;
+  }
+  .section__time__dias p, .section__time__horas p, .section__time__minutos p, .section__time__segundos p {
+    font-size: 2em;
+    color: white;
+    font-weight: 300;
+  }
+  .section__time__dias span, .section__time__horas span, .section__time__minutos span, .section__time__segundos span {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .section__planets {
+    position: absolute;
+    top: 0;
+    right: 0 !important;
+    z-index: 0;
+    width: 15em;
+  }
+  .section__rocket {
+    right: 26%;
+    width: 150px;
+  }
+  .section__btn {
+    font-size: 14px;
   }
 }
 
